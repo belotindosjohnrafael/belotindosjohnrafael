@@ -4,17 +4,10 @@ Welcome to my academic and personal project portfolio! This repository documents
 
 Here, you will find a compilation of my solutions to algorithmic problems, system architectures, and software engineering projects.
 
----
 
 ## Technical Skills & Stack
 * **Core Concepts:** Data Structures & Algorithms, Object-Oriented Programming (OOP), Discrete Mathematics.
 * **Currently Learning:** Abstract Data Types (CMSC 21), Logic & Sets (CMSC 57).
-
-## Featured Projects
-Here are some of the key projects I have built to practice logic and software design:
-
-| Project | Description | Tech Stack | Status |
-| **[Python Quordle]** | A CLI-based recreation of the popular word puzzle game. Features logic for letter tracking and win/loss states. | *Python* | ✅ Completed |
 
 
 ## Repository Structure
