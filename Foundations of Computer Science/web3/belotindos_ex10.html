@@ -1,0 +1,79 @@
+<!--
+#BELOTINDOS, JOHN RAFAEL P.
+#G-1L
+#Creation Date: October 26, 2025
+#This HTML page is for setting up a room. The details ordered and
+delivered by ITEA, a furniture company. This HTML page asks for personal information, some
+details about the party and venue details.
+-->
+    </fieldset>
+<!DOCTYPE html>
+<html>
+<head><title>Exercise 10</title></head>
+<body>
+    <link rel="stylesheet" href="belotindos_ex8.css">
+    <form id="form">
+    <fieldset><legend>Customer Information</legend>
+    <label for="name">Name: </label><input type="text" name="name" id="name" required><br>
+    <label for="mobilenumber">Mobile Number: </label><input type="tel" name="mobilenumber" placeholder="09XXXXXXXXX" id="mobilenumber" required pattern="[0]{1}[9]{1}[0-9]{9}" title="09XXXXXXXXX"><br> <!--from w3schools https://tinyurl.com/r672ae7r - This code checks if user input has the right format-->
+    <label for="email">Email Address: </label><input type="email" name="email" id="email" required> <!--from w3schools https://tinyurl.com/wrxr76cv-->
+    </fieldset>
+
+    <fieldset class="second"><legend>ITEA Details</legend>
+        <label for="occupants">Number of Occupants(1-5) </label><input type="number" name="numofocu" id="occupants">
+        <br><sub>Room Type</sub>
+        <br><input type="radio" name="roomtype" id="bedroom" checked="checked"><label for="bedroom"> Bedroom</label> <!--from stack overflow https://tinyurl.com/2s4k6tnz - This code pre-selects Bedroom on types radio -->
+        <br><input type="radio" name="roomtype" id="living"><label for="living"> Living Room</label>
+        <br><input type="radio" name="roomtype" id="office"><label for="office"> Office</label>
+        <br><input type="radio" name="roomtype" id="child"><label for="child"> Children's Room</label>
+
+        <br><sub>Bed Size</sub>
+        <br><input type="radio" name="bedsize" id="single" value="12000" checked="checked"><label for="single">Single</label>
+        <br><input type="radio" name="bedsize" id="double" value="13500"><label for="double">Double</label>
+        <br><input type="radio" name="bedsize" id="queen" value="16000"><label for="queen">Queen</label>
+        <br><input type="radio" name="bedsize" id="king" value="20000"><label for="king">King</label>
+
+        <br><sub>Cabinets</sub>
+        <br><input type="radio" name="cabinets" id="bookcases" value="5000" checked="checked"><label for="bookcases">Book Cases</label>
+        <br><input type="radio" name="cabinets" id="storageshelves" value="10500"><label for="storageshelves">Storage Shelves</label>
+        <br><input type="radio" name="cabinets" id="wallshelves" value="2500"><label for="wallshelves">Wall Shelves</label>
+
+        <br><sub>Tables</sub>
+        <br><input type="checkbox" name="tables" id="desk" value="7000" sjr="Desk"><label for="desk">Desk</label>
+        <br><input type="checkbox" name="tables" id="bedside" value="3500"><label for="bedside">Bedside Table</label>
+        <br><input type="checkbox" name="tables" id="multifunctional" value="10000"><label for="multifunctional">Multifunctional Table</label>
+        <br><input type="checkbox" name="tables" id="dressing" value="8000"><label for="dressing">Dressing Table</label>
+
+        <br><sub>Decorative Additions</sub>
+        <br><input type="checkbox" name="decor" id="mirror" value="2500"><label for="mirror">Mirror</label>
+        <br><input type="checkbox" name="decor" id="rug" value="8000"><label for="rug">Rug</label>
+        <br><input type="checkbox" name="decor" id="wallacc" value="1000"><label for="wallacc">Wall Accents</label>
+        <br><input type="checkbox" name="decor" id="clock" value="500"><label for="clock">Clock</label>
+
+        <br><sub>Room Size</sub>
+        <select name="roomsize" id="roomsize">
+            <option value="1">Small</option>
+            <option value="1.25">Medium</option>
+            <option value="1.5">Large</option>
+            <option value="2">Extra Large</option>
+        </select>
+    </fieldset>
+    
+    <fieldset><legend>Delivery Details</legend>
+        <sub>Shipping</sub>
+        <br><input type="radio" name="shipping" id="delivery" value="1000"><label for="delivery">Delivery</label>
+        <br><input type="radio" name="shipping" id="pickup"><label for="pickup">Third-party Pickup</label>
+        <br><label for="deliveryaddress">Delivery Address</label>
+        <br><textarea name="deliver" rows="8" cols="50" id="deliveryaddress" placeholder="Address here..." required></textarea>
+        <br><label for="deliverydate">Preferred delivery date </label><input type="date" name="deliver" id="deliverydate" required>
+        <p id="pastdate"></p>
+        <label for="deliverytime">Preferred delivery time </label><input type="time"name="deliver" id="deliverytime" required>
+        <p id="satamangpanahon"></p>
+    </fieldset>
+    
+    <input type="submit" value="Submit" id="calculate">
+    <input type="reset" value="Reset">
+    </form>
+    <script src="belotindos_ex10.js"></script>
+    </body>
+</html>
